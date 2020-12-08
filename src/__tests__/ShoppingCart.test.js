@@ -30,8 +30,6 @@ describe("shoppingCart", () => {
     const shoppingCart = new ShoppingCart();
     expect(shoppingCart.products).toEqual([]);
     shoppingCart.add(product);
-    // const product2 = Object.assign(product, { quantity: 3 });
-
     shoppingCart.add(product2);
     expect(shoppingCart.total).toEqual(399.92);
   });
