@@ -7,13 +7,16 @@ class ShoppingCart {
     if (product.quantity < 1) {
       throw Error("Invalid Quantity");
     }
+
     const productIndex = this.products.findIndex((item) => {
-      item.id === product.id;
+      return item.id === product.id;
     });
-    console.log("productIndex", productIndex);
-    if (productIndex > 0) {
+
+    if (productIndex >= 0) {
       this.products[productIndex].quantity += product.quantity;
-      this.total += Math.round(product.quantity * product.price * 100) / 100;
+      const total =
+        this.total + Math.round(product.quantity * product.price * 100) / 100;
+      this.total = Math.round(total * 100) / 100;
     } else {
       this.products.push(product);
       this.total = Math.round(product.quantity * product.price * 100) / 100;
