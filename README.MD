@@ -10,11 +10,11 @@ in the cart.
 - All totals should be rounded up to 2 decimal places
 -
 
-# Language : Javascript
+### Language : Javascript
 
-# Testing Library : Jest
+#### Testing Library : Jest
 
-# to run the test :
+#### to run the test :
 
 navigate to the root directory in the terminal
 npm run test
