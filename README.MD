@@ -8,14 +8,15 @@ in the cart.
 
 - Just use tests to drive the code
 - All totals should be rounded up to 2 decimal places
--
 
 ### Language : Javascript
 
-#### Testing Library : Jest
+### Testing Library : Jest
 
-#### to run the test :
+### to run the test :
 
-navigate to the root directory in the terminal
-npm run test
-to see the results with coverage : npx jest --coverage
+##### navigate to the root directory in the terminal
+
+##### npm run test
+
+##### to see the results with coverage : npx jest --coverage
